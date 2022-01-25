@@ -1,4 +1,4 @@
-env: "development"
+env: "production"
 apps:
   title: "API Precalculated Table for PD MODEL ETB"
   version: "1.0.0"
@@ -13,9 +13,9 @@ Pengembangan API ini menggunakan bahasa pemrograman **Python** serta framework *
 Deployment kedalam internal system menggunakan **Docker Engine** untuk menstandarisasikan pengelolaan asset.
   '
   servers:
-    - url: "http://192.168.109.153:8001"
+    - url: "http://127.0.0.1:8001"
       description: "localhost"
-    - url: "http://127.0.0.1:8000"
+    - url: "http://127.0.0.1:8001"
       description: "local"
       
 allowed_hosts:
@@ -50,13 +50,13 @@ database:
     host: "localhost"
     port: 5432
     username: "postgres"
-    password: "example"
+    password: "neonB"
     db: "postgres"
     schema: "public"
 
 api_token:
   production:
-    - "production"
+    - "prod"
     - "2ZwS5vBtrJdUwZsjqkMJdTLzdrCeEzD8"
     - "kgzzWjRqTSP3zua2H5k4MCGVTEmBL2Q4"
     - "rnm4v9zWfp5Rv5jVqAsaefv3Ktx3HyEY"
